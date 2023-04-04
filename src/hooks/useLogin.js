@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import { projectAuth } from "../firebase/config";
 import { useAuthContext } from "./useAuthContext";
 
@@ -12,15 +12,13 @@ export const useLogin = () => {
     setError(null);
     setIsPending(true);
 
-    //sign the user out
+    // sign the user out
     try {
-      console.log("Email from useLogin:", email);
       const res = await projectAuth.signInWithEmailAndPassword(email, password);
 
       // dispatch logout action
       dispatch({ type: "LOGIN", payload: res.user });
 
-      // update state
       if (!isCancelled) {
         setIsPending(false);
         setError(null);

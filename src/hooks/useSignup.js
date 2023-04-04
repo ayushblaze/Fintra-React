@@ -21,13 +21,13 @@ export const useSignup = () => {
       console.log(res.user);
 
       if (!res) {
-        throw new Error("Could not complete signup");
+        throw new Error("Couldn't sign you up.");
       }
 
       // add display name to user
       await res.user.updateProfile({ displayName });
 
-      // dispatch the login action
+      // dispatch login action
       dispatch({ type: "LOGIN", payload: res.user });
 
       if (!isCancelled) {
@@ -47,5 +47,5 @@ export const useSignup = () => {
     return () => setIsCancelled(true);
   }, []);
 
-  return { signup, error, isPending };
+  return { error, isPending, signup };
 };
