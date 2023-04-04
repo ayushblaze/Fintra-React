@@ -28,6 +28,10 @@ An expense tracker made using ReactJS which makes heavy use of firebase for auth
 #### Home page (After signing up/loggin in)
 ![home page](https://i.ibb.co/HzZjc6C/screencapture-ayushblaze-fintra-netlify-app-2023-04-04-16-14-54.png)
 
+#### Adding a Transaction
+![adding transaction](https://i.ibb.co/QNQg2tg/screencapture-ayushblaze-fintra-netlify-app-2023-04-04-16-28-09.png)
+![adding transaction](https://i.ibb.co/TmPxLLF/screencapture-ayushblaze-fintra-netlify-app-2023-04-04-16-28-21.png)
+
 
 ## Cloning and Running the Application in local
 
