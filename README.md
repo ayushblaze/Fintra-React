@@ -10,6 +10,7 @@ An expense tracker made using ReactJS which makes heavy use of firebase for auth
 
 - [x] Login
 - [x] Signup
+- [x] Created hooks for login and signup, also created a useFirebase and a useCollection hook to handle everything related to firebase with ease
 - [x] Add Transaction
 - [x] Delete Transaction
 - [x] Transactions are always ordered by the date they were created on (Descending)
