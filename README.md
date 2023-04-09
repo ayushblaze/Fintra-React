@@ -10,7 +10,13 @@ An expense tracker made using ReactJS which makes heavy use of firebase for auth
 
 - [x] Login
 - [x] Signup
-- [x] Created hooks for login and signup, also created a useFirebase and a useCollection hook to handle everything related to firebase with ease
+- [x] Hooks: 
+      - useAuthContext - Handling authentication (checking if the user is already logged in then the page first loads).
+      - useFirebase - All of the Firebase services are initialized inside this hook.
+      - useCollection - Access different collections in Firestore DB (accepts a collection name).
+      - useLogin
+      - useSignup
+      - useLogout
 - [x] Add Transaction
 - [x] Delete Transaction
 - [x] Transactions are always ordered by the date they were created on (Descending)
